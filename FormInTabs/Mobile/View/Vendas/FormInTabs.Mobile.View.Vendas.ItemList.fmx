@@ -1,0 +1,70 @@
+inherited filVenda: TfilVenda
+  Size.Height = 50.000000000000000000
+  OnPainting = FramePainting
+  inherited lytBackground: TLayout
+    Size.Height = 50.000000000000000000
+    inherited rctBackground: TRectangle
+      Size.Height = 50.000000000000000000
+      inherited lneBottom: TLine
+        Position.Y = -3.000000000000000000
+      end
+    end
+    inherited rctClient: TRectangle
+      Size.Height = 40.000000000000000000
+      object lblCliente: TLabel
+        Align = Top
+        Size.Width = 390.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'lblCliente'
+        TabOrder = 0
+        TabStop = False
+      end
+      object lytInfo: TLayout
+        Align = Client
+        Size.Width = 390.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        TabStop = False
+        object lblData: TLabel
+          Align = Left
+          AutoSize = True
+          Margins.Right = 5.000000000000000000
+          Size.Width = 38.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.WordWrap = False
+          Text = 'lblData'
+          TabOrder = 2
+          TabStop = False
+        end
+        object lblVlrTotal: TLabel
+          Align = Right
+          AutoSize = True
+          Margins.Left = 5.000000000000000000
+          Position.X = 337.000000000000000000
+          Size.Width = 53.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.WordWrap = False
+          Text = 'lblVlrTotal'
+          TabOrder = 1
+          TabStop = False
+        end
+        object lblDesconto: TLabel
+          Align = Client
+          AutoSize = True
+          Size.Width = 289.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          TextSettings.WordWrap = False
+          Text = 'lblDesconto'
+          TabOrder = 0
+          TabStop = False
+        end
+      end
+    end
+  end
+end
